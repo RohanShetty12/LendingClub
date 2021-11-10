@@ -1,52 +1,46 @@
-# Project Name
-> Outline a brief description of your project.
+# Lending Club Case study
+> This is an Exploratory Data Analysis project on the Lending Club Case study. 
 
 
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
+* [Recommendations](#Recommendations)
 
-<!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+### Introduction
+We have a company which is the largest online loan marketplace, facilitating personal loans, business loans, and financing of medical procedures. Borrowers can easily access lower interest rate loans through a fast online interface. 
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+### Business Objective
+Like most other lending companies, lending loans to ‘risky’ applicants is the largest source of financial loss (Credit Loss) i.e borrowers who default cause the largest amount of loss to the lenders. The company wants to understand the driving factors behind loan default so that they can evaluate these parameters in the loan application and effectively decide if they can Approve or Reject loan
 
-## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+### Problem Statement
+Whenever the company receives a loan application, the company has to make a decision for loan approval based on the applicant’s profile. Two types of risks are associated with the bank’s decision:
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- If the applicant is likely to repay the loan, then not approving the loan results in a loss of business to the company
+
+- If the applicant is not likely to repay the loan, i.e. he/she is likely to default, then approving the loan may lead to a financial loss for the company
+
+We need to analyze the dataset provided by the company and perform an Exploratory Data Analysis to highlight the list of driving factors which influence the possibility of an applicant repay the loan or defaulting on it.
+
+
+## Recommendations
+After analyzing the above findings, i have listed down a consolidated list of suggestions which would help the organization in approving good loans and rejecting the bad loans:
+- The probability of a loan defaulting would drastically reduce if we **reduce the interest rates**. Its been observed that higher interest rates combined with longer loan tenure would result in higher interest amount to paid as compared to the prinicpal amount. This would eventually result in the borrower not being able to keep up with the obligation and hence defaulting.
+- Extending point 1, **longer tenure period should be discouraged**, specifically for candidates who have higher interest rate or lower grade. Its observed that longer the tenure higher the probability of loan default.
+- The company should **reconsider approving loan for candidates who have a lower grade** i.e C, D or E
+- If the candidate, in the recent times, had **made multiple inquiries ,then such applications should be scrutinized**. 
+- Loan applications from candidates who **tend to utilize their credit to the limit should be re-considered**.
+- **Higher income candidates should be given preference in approving loans**, as its observed that higher income candidates tend repay their loans when compared with lower income candidates.
+
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
+- numpy - 1.16.2
+- pandas - 0.24.2
+- matplotlib - 3.0.3
+- seaborn - 0.11.2
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+Created by [@RohanShetty12] - feel free to contact me!
